@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import sample.database.Dopen;
+import sample.fonksiyonlar.Get;
 
 public class Main extends Application {
 
@@ -13,6 +14,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         Dopen.openDB();
+        System.out.println(Get.flightID());
         primaryStage.setTitle("");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();

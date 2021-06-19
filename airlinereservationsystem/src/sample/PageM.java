@@ -14,6 +14,7 @@ import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import sample.database.Dopen;
+import sample.fonksiyonlar.Get;
 
 import javax.swing.plaf.DesktopIconUI;
 
@@ -38,10 +39,10 @@ public class PageM {
 
 
 
-    String dollar = "Dollar($)";
-    String euro = "Euro(€)";
-    String pound = "Pound(£)";
-    String turklira = "Turk Lira(₺)";
+    String dollar = "Dollar";
+    String euro = "Euro";
+    String pound = "Pound";
+    String turklira = "Turk Lira";
     String covidInfoUrl = "https://www.turkishairlines.com/tr-int/duyurular/coronavirus-salgini/seyahat-kisitlamalari/";
     String infoUrl = "https://www.turkishairlines.com/tr-int/basin-odasi/hakkimizda/";
 
@@ -68,6 +69,7 @@ public class PageM {
 
     @FXML
     void getSurvey(MouseEvent event) {
+
 
     }
 

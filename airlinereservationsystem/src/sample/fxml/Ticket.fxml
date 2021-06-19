@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="554.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Ticket">
    <children>
       <Label layoutX="162.0" layoutY="14.0" prefHeight="20.0" prefWidth="133.0" text="Bilet Satin Al">
@@ -17,18 +16,17 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <RadioButton fx:id="roundTrip" layoutX="56.0" layoutY="59.0" mnemonicParsing="false" onAction="#roundTripFunc" text="Gidis-Donus" />
-      <RadioButton fx:id="oneWay" layoutX="175.0" layoutY="59.0" mnemonicParsing="false" onAction="#oneWayFunc" text="Tek Yon" />
-      <TextField fx:id="fromTextField" layoutX="56.0" layoutY="125.0" />
-      <TextField fx:id="toTextField" layoutX="228.0" layoutY="125.0" />
-      <Label layoutX="56.0" layoutY="97.0" prefHeight="16.0" prefWidth="150.0" text="Nereden" />
-      <Label fx:id="toLabel" layoutX="228.0" layoutY="97.0" prefHeight="16.0" prefWidth="150.0" text="Nereye" />
-      <DatePicker fx:id="fromDate" layoutX="56.0" layoutY="159.0" prefHeight="26.0" prefWidth="150.0" />
-      <DatePicker fx:id="toDate" layoutX="228.0" layoutY="159.0" prefHeight="26.0" prefWidth="150.0" />
-      <Label layoutX="56.0" layoutY="201.0" prefHeight="16.0" prefWidth="150.0" text="Kisi Sayisi" />
-      <Slider fx:id="customerSize" layoutX="213.0" layoutY="201.0" max="10.0" onMouseExited="#getSliderValue" />
-      <Button layoutX="115.0" layoutY="264.0" mnemonicParsing="false" onAction="#infoTicket" prefHeight="26.0" prefWidth="197.0" text="Bilet Detaylarini Goruntule" />
-      <Label fx:id="customerValue" layoutX="361.0" layoutY="201.0" />
+      <RadioButton fx:id="roundTrip" layoutX="50.0" layoutY="290.0" mnemonicParsing="false" onAction="#roundTripFunc" text="Gidis-Donus" />
+      <RadioButton fx:id="oneWay" layoutX="169.0" layoutY="290.0" mnemonicParsing="false" onAction="#oneWayFunc" text="Tek Yon" />
+      <TextField fx:id="fromTextField" layoutX="50.0" layoutY="356.0" />
+      <TextField fx:id="toTextField" layoutX="222.0" layoutY="356.0" />
+      <Label layoutX="50.0" layoutY="328.0" prefHeight="16.0" prefWidth="150.0" text="Nereden" />
+      <Label fx:id="toLabelOne" layoutX="222.0" layoutY="328.0" prefHeight="16.0" prefWidth="150.0" text="Nereye" />
+      <DatePicker fx:id="fromDate" layoutX="50.0" layoutY="390.0" prefHeight="26.0" prefWidth="150.0" />
+      <DatePicker fx:id="toDate" layoutX="222.0" layoutY="390.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label layoutX="50.0" layoutY="432.0" prefHeight="16.0" prefWidth="150.0" text="Kisi Sayisi" />
+      <Slider fx:id="customerSize" layoutX="207.0" layoutY="432.0" max="10.0" onMouseExited="#getSliderValue" />
+      <Button layoutX="109.0" layoutY="495.0" mnemonicParsing="false" onAction="#infoTicket" prefHeight="26.0" prefWidth="197.0" text="Bilet Detaylarini Goruntule" />
       <Label fx:id="piadTitle" layoutX="704.0" layoutY="14.0" prefHeight="20.0" prefWidth="133.0" text="Odeme Bilgisi">
          <font>
             <Font size="20.0" />
@@ -40,10 +38,21 @@
       <Label fx:id="fromLabel" layoutX="645.0" layoutY="89.0" prefHeight="16.0" prefWidth="126.0" text="Nereden" />
       <Label fx:id="to" layoutX="778.0" layoutY="117.0" prefHeight="16.0" prefWidth="126.0" />
       <Label fx:id="toLabel" layoutX="645.0" layoutY="117.0" prefHeight="16.0" prefWidth="126.0" text="Nereye:" />
-      <Label fx:id="ticketValue" layoutX="645.0" layoutY="143.0" prefHeight="16.0" prefWidth="126.0" text="Bilet Tipi:" />
+      <Label fx:id="ticketLabel" layoutX="645.0" layoutY="143.0" prefHeight="16.0" prefWidth="126.0" text="Bilet Tipi:" />
       <Label fx:id="ticketValue" layoutX="778.0" layoutY="143.0" prefHeight="16.0" prefWidth="126.0" />
       <Label fx:id="paidLabel" layoutX="645.0" layoutY="169.0" prefHeight="16.0" prefWidth="126.0" text="Tutar" />
-      <Label fx:id="paidValue" layoutX="778.0" layoutY="164.0" prefHeight="16.0" prefWidth="126.0" />
+      <Label fx:id="paidValue" layoutX="778.0" layoutY="170.0" prefHeight="16.0" prefWidth="126.0" />
       <Button fx:id="buyTicketId" layoutX="720.0" layoutY="264.0" mnemonicParsing="false" onAction="#buyTicket" prefHeight="26.0" prefWidth="116.0" text="Satin Al" />
+      <Label layoutX="14.0" layoutY="52.0" prefHeight="18.0" prefWidth="58.0" text="Isim" />
+      <TextField fx:id="nameTextField" layoutX="72.0" layoutY="48.0" />
+      <Label layoutX="14.0" layoutY="88.0" prefHeight="18.0" prefWidth="58.0" text="Soyisim" />
+      <TextField fx:id="surnameTextField" layoutX="72.0" layoutY="84.0" />
+      <Label layoutX="14.0" layoutY="124.0" prefHeight="18.0" prefWidth="58.0" text="E-Mail" />
+      <TextField fx:id="emailTextField" layoutX="72.0" layoutY="120.0" />
+      <Label layoutX="14.0" layoutY="160.0" prefHeight="18.0" prefWidth="58.0" text="Ulke" />
+      <TextField fx:id="citizenTextField" layoutX="72.0" layoutY="156.0" />
+      <Label layoutX="14.0" layoutY="192.0" prefHeight="18.0" prefWidth="58.0" text="Tel No:" />
+      <TextField fx:id="telephoneNumberTextField" layoutX="72.0" layoutY="188.0" />
+      <Label fx:id="sliderCustomerSizeLabel" layoutX="344.0" layoutY="432.0" prefHeight="16.0" prefWidth="23.0" />
    </children>
 </AnchorPane>
