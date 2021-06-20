@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.KararDefteri">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="230.0" style="-fx-background-color: blue;" text="Apartman için alınan kararı giriniz:" textFill="#06f516" />
+      <TextField fx:id="karardefteriTextfield" layoutX="244.0" layoutY="14.0" prefHeight="26.0" prefWidth="345.0" style="-fx-background-color: grey;" />
+      <Button layoutX="73.0" layoutY="347.0" mnemonicParsing="false" onAction="#kararKaydetFunc" prefHeight="26.0" prefWidth="140.0" style="-fx-background-color: blue;" text="Kararı Kaydet" textFill="#03fc1c" />
+      <ListView fx:id="kararlistview" layoutX="7.0" layoutY="47.0" prefHeight="288.0" prefWidth="584.0" />
+      <Button layoutX="387.0" layoutY="347.0" mnemonicParsing="false" onAction="#kararSilFunc" prefHeight="26.0" prefWidth="140.0" style="-fx-background-color: blue;" text="Kararı Sil" textFill="#03fc1c" />
+      <Button layoutX="229.0" layoutY="347.0" mnemonicParsing="false" onAction="#kararListeleFunc" prefHeight="26.0" prefWidth="140.0" style="-fx-background-color: blue;" text="Kararları Listele" textFill="#03fc1c" />
+   </children>
+</AnchorPane>

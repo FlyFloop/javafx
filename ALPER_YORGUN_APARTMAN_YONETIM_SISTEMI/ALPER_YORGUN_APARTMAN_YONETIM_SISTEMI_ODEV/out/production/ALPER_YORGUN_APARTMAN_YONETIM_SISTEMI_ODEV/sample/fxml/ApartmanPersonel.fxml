@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="424.0" prefWidth="724.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ApartmanPersonel">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="28.0" prefWidth="117.0" text="Personel Adı:" textFill="#05fc11" />
+      <TextField fx:id="personelAdTextfiled" layoutX="131.0" layoutY="15.0" prefHeight="26.0" prefWidth="143.0" style="-fx-background-color: grey;" />
+      <Label layoutX="14.0" layoutY="56.0" prefHeight="28.0" prefWidth="117.0" text="Personel Soyadı:" textFill="#05fc11" />
+      <TextField fx:id="personelSoyadTextfield" layoutX="131.0" layoutY="57.0" prefHeight="26.0" prefWidth="143.0" style="-fx-background-color: grey;" />
+      <Label layoutX="14.0" layoutY="95.0" prefHeight="28.0" prefWidth="117.0" text="Personel Görevi:" textFill="#05fc11" />
+      <TextField fx:id="personelGorevTextFiled" layoutX="131.0" layoutY="96.0" prefHeight="26.0" prefWidth="143.0" style="-fx-background-color: grey;" />
+      <Button layoutX="25.0" layoutY="174.0" mnemonicParsing="false" onAction="#addPersonel" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: blue;" text="Personel Ekle" textFill="#05ff15" />
+      <TableView fx:id="personeltableview" layoutX="304.0" layoutY="9.0" prefHeight="200.0" prefWidth="406.0">
+        <columns>
+          <TableColumn fx:id="personelAD" prefWidth="88.0" text="Personel Ad" />
+          <TableColumn fx:id="personelSoyad" prefWidth="113.0" text="Personel Soyad" />
+            <TableColumn fx:id="personelGorev" prefWidth="106.0" text="Personel Görev" />
+            <TableColumn fx:id="personelNo" prefWidth="97.0" text="Personel No" />
+        </columns>
+      </TableView>
+      <Button layoutX="436.0" layoutY="221.0" mnemonicParsing="false" onAction="#ListPersonel" style="-fx-background-color: blue;" text="Personeli Listele" textFill="#05ff15" />
+      <Button layoutX="158.0" layoutY="174.0" mnemonicParsing="false" onAction="#deletePersonel" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: blue;" text="Personel Sil" textFill="#05ff15" />
+      <Label layoutX="14.0" layoutY="131.0" prefHeight="28.0" prefWidth="117.0" text="Personel No:" textFill="#05fc11" />
+      <TextField fx:id="personelNO" layoutX="131.0" layoutY="132.0" prefHeight="26.0" prefWidth="143.0" style="-fx-background-color: grey;" />
+   </children>
+</AnchorPane>

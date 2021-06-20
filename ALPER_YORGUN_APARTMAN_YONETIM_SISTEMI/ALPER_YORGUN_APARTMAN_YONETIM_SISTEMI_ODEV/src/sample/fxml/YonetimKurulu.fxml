@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.YonetimKurulu">
+   <children>
+      <TableView fx:id="yonetimKurulu" layoutX="14.0" layoutY="36.0" prefHeight="193.0" prefWidth="228.0">
+        <columns>
+          <TableColumn fx:id="daireno" prefWidth="75.0" text="Daire No" />
+          <TableColumn fx:id="daireAd" prefWidth="75.0" text="Ad" />
+            <TableColumn fx:id="daireSoyad" prefWidth="75.0" text="Soyad" />
+        </columns>
+      </TableView>
+      <Label layoutX="13.0" layoutY="6.0" prefHeight="16.0" prefWidth="228.0" text="Yönetim Kurulu" textAlignment="CENTER" textFill="#03f50f">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="36.0" style="-fx-background-color: blue;" text="Daire No:" textFill="#04f210" />
+      <TextField fx:id="yonetimno" layoutX="389.0" layoutY="31.0" style="-fx-background-color: grey;" />
+      <Label layoutX="300.0" layoutY="82.0" style="-fx-background-color: blue;" text="Daire Ad:" textFill="#04f210" />
+      <TextField fx:id="yonetimad" layoutX="389.0" layoutY="77.0" style="-fx-background-color: grey;" />
+      <Label layoutX="300.0" layoutY="127.0" prefHeight="16.0" prefWidth="81.0" style="-fx-background-color: blue;" text="Daire Soyad:" textFill="#04f210" />
+      <TextField fx:id="yonetimsoyad" layoutX="389.0" layoutY="122.0" style="-fx-background-color: grey;" />
+      <Button layoutX="260.0" layoutY="174.0" mnemonicParsing="false" onAction="#addYonetim" style="-fx-background-color: blue;" text="Yönetim Kuruluna Ekle" textFill="#15ff05" />
+      <Button layoutX="429.0" layoutY="174.0" mnemonicParsing="false" onAction="#deleteYonetim" style="-fx-background-color: blue;" text="Yönetim Kurulundan Sil" textFill="#15ff05" />
+      <Button layoutX="39.0" layoutY="241.0" mnemonicParsing="false" onAction="#listYonetim" style="-fx-background-color: blue;" text="Yönetim Kurulunu Listele" textFill="#15ff05" />
+   </children>
+</AnchorPane>

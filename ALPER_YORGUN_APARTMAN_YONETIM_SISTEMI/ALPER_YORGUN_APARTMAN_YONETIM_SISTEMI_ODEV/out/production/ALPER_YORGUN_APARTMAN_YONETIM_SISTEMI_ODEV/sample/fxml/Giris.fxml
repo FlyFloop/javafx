@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Giris">
+   <children>
+      <Label layoutX="181.0" layoutY="14.0" prefHeight="16.0" prefWidth="262.0" text="Apartman Yönetim Sistemi Yönetici Girişi" textAlignment="CENTER" textFill="#14da50" />
+      <Label layoutX="157.0" layoutY="200.0" prefHeight="27.0" prefWidth="119.0" text="Kullanıcı ID: " textFill="#12e334" />
+      <TextField fx:id="ıdTextfield" layoutX="288.0" layoutY="201.0" style="-fx-background-color: grey;" />
+      <Label layoutX="157.0" layoutY="283.0" prefHeight="27.0" prefWidth="119.0" text="Kullanıcı Parolası:" textFill="#1eee0f" />
+      <Button fx:id="girisYapButton" layoutX="157.0" layoutY="341.0" mnemonicParsing="false" onAction="#girisYapFunc" prefHeight="26.0" prefWidth="131.0" style="-fx-background-color: blue;" text="Giriş Yap" textFill="#07e41d" />
+      <Button fx:id="quit" layoutX="312.0" layoutY="341.0" mnemonicParsing="false" onAction="#cikisFunc" prefHeight="26.0" prefWidth="131.0" style="-fx-background-color: blue;" text="Çıkış Yap" textFill="#26eb0c" />
+      <PasswordField fx:id="passwordField" layoutX="288.0" layoutY="284.0" style="-fx-background-color: grey;" />
+      <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="237.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/loginpagelogo.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
