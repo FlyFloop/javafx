@@ -67,18 +67,21 @@ public class PageM {
         Desktop.getDesktop().browse(URI.create(infoUrl));
     }
     @FXML
-    void getMyTicketInfo(MouseEvent event) {
-
+    void getMyTicketInfo(MouseEvent event) throws IOException{
+        Parent ticketInfo = FXMLLoader.load(getClass().getResource("fxml/TicketInfo.fxml"));
+        Stage primaryStage = new Stage();
+        primaryStage.setTitle("");
+        primaryStage.setScene(new Scene(ticketInfo));
+        primaryStage.show();
     }
-
-    @FXML
-    void getMyTicket(MouseEvent event) {
-
-    }
-
     @FXML
     void getSurvey(MouseEvent event) {
 
+
+    }
+
+    @FXML
+    void getRemoveTicket(MouseEvent event) {
 
     }
 

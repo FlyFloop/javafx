@@ -14,14 +14,11 @@ public class SearchDb {
 
         while (resultSet.next()){
             if (resultSet.getString("CNAME").equals(isim) &&   resultSet.getString("CTNUMBER").equals(telno)){
-                Dopen.closeDB();
+
                 return  true;
             }
-            else {
-                Dopen.closeDB();
-                return false;
-            }
         }
-        return Boolean.parseBoolean(null);
+
+        return false;
     }
 }

@@ -28,9 +28,13 @@
          <children>
             <Label onMouseClicked="#getTicket" prefHeight="19.0" prefWidth="96.0" text="Bilet Satın Al" />
             <Label onMouseClicked="#getCheckIn" prefHeight="19.0" prefWidth="96.0" text="Check-in" />
-            <Label onMouseClicked="#getMyTicket" prefHeight="19.0" prefWidth="102.0" text="Uçuş Durumum" />
             <Label onMouseClicked="#getSurvey" prefHeight="19.0" prefWidth="102.0" text="Anket" />
-            <Label fx:id="myTicketInfoLabel" onMouseClicked="#getMyTicketInfo" text="Ucus Bilgilerim" />
+            <Label fx:id="myTicketInfoLabel" onMouseClicked="#getMyTicketInfo" text="Bilet Bilgilerim" />
+         </children>
+      </VBox>
+      <VBox layoutX="174.0" layoutY="125.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label onMouseClicked="#getRemoveTicket" prefHeight="16.0" prefWidth="101.0" text="Bilet Iptal" />
          </children>
       </VBox>
    </children>
