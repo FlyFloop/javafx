@@ -81,7 +81,12 @@ public class PageM {
     }
 
     @FXML
-    void getRemoveTicket(MouseEvent event) {
+    void getRemoveTicket(MouseEvent event) throws IOException {
+        Parent removeTicket = FXMLLoader.load(getClass().getResource("fxml/RemoveTicket.fxml"));
+        Stage primaryStage = new Stage();
+        primaryStage.setTitle("");
+        primaryStage.setScene(new Scene(removeTicket));
+        primaryStage.show();
 
     }
 

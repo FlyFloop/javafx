@@ -61,7 +61,6 @@ public class TicketInfo {
     void getMyTicketInfo(ActionEvent event) throws SQLException {
         if (SearchDb.foundCustomer(surNameTextField.getText(), telnoTextField.getText())){
             System.out.println("arama basarili");
-
             String sql = "SELECT * FROM CUSTOMER WHERE CNAME = ?";
             PreparedStatement preparedStatement = Dopen.openDB().prepareStatement(sql);
             preparedStatement.setString(1, surNameTextField.getText());
@@ -76,8 +75,6 @@ public class TicketInfo {
             fromLabel.setText(resultSet.getString("CFROM"));
             toLabel.setText(resultSet.getString("CTO"));
             amaountLabel.setText(resultSet.getString("CPAID"));
-
-
         }
 
     }
