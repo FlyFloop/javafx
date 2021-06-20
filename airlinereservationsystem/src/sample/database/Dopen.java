@@ -13,4 +13,13 @@ public class Dopen {
         }
         return connection;
     }
+    public static void closeDB(){
+        Connection connection = null;
+        try {
+            connection = DriverManager.getConnection("jdbc:sqlite:flight.db");
+            connection.close();
+        }catch (Exception e){
+            System.out.println(e.getClass().getName()+":"+e.getMessage());
+        }
+    }
 }

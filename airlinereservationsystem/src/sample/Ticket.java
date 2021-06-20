@@ -110,7 +110,7 @@ public class Ticket {
     @FXML
     void buyTicket(ActionEvent event) throws SQLException {
         totaldays = (int) ChronoUnit.DAYS.between(fromDate.getValue(), toDate.getValue());
-        addCustomer.addCustomerToDB(nameTextField.getText(),surnameTextField.getText(),currency, fromDate.getValue().toString(), toDate.getValue().toString(), Get.paid(currency, totaldays, (int)customerSize.getValue()), Get.flightID(), emailTextField.getText(), telephoneNumberTextField.getText(), citizenTextField.getText(), String.valueOf((int)customerSize.getValue()));
+        addCustomer.addCustomerToDB(nameTextField.getText(),surnameTextField.getText(),currency, fromDate.getValue().toString(), toDate.getValue().toString(), Get.paid(currency, totaldays, (int)customerSize.getValue()), Get.flightID(), emailTextField.getText(), telephoneNumberTextField.getText(), citizenTextField.getText(), String.valueOf((int)customerSize.getValue()),String.valueOf(totaldays));
 
 
     }

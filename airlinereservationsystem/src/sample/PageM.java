@@ -48,7 +48,12 @@ public class PageM {
 
 
     @FXML
-    void getCheckIn(MouseEvent event) {
+    void getCheckIn(MouseEvent event) throws IOException {
+        Parent checkIn = FXMLLoader.load(getClass().getResource("fxml/CheckIn.fxml"));
+        Stage primaryStage = new Stage();
+        primaryStage.setTitle("");
+        primaryStage.setScene(new Scene(checkIn));
+        primaryStage.show();
 
     }
 
@@ -60,6 +65,10 @@ public class PageM {
     @FXML
     void getInfo(MouseEvent event) throws IOException {
         Desktop.getDesktop().browse(URI.create(infoUrl));
+    }
+    @FXML
+    void getMyTicketInfo(MouseEvent event) {
+
     }
 
     @FXML
